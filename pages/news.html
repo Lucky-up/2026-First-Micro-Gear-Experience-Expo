@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>展会新闻</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+	<header class="site-header">
+		<!-- 汉堡菜单按钮 -->
+		<div class="menu-toggle" id="menuToggle">☰</div>
+		<div class="container header-inner">
+			<nav class="main-nav" id="mainNav">
+				<a href="../index.html">首页</a>
+				<a href="./news.html">展会新闻</a>
+				<a href="./about.html">关于我们</a>
+				<a href="./contact.html">参展预约</a>
+				<a href="./people.html">合作伙伴</a>
+			</nav>
+			<img src="../img/展会新闻/顶图.jpg">
+		</div>
+	</header>
+	<!-- 添加JavaScript以实现汉堡菜单功能 -->
+	<script>
+		// 获取菜单按钮和导航菜单
+		const menuToggle = document.getElementById('menuToggle');
+		const mainNav = document.getElementById('mainNav');
+		
+		// 点击菜单按钮切换导航菜单显示状态
+		menuToggle.addEventListener('click', function() {
+			mainNav.classList.toggle('active');
+		});
+		
+		// 点击导航链接后关闭菜单
+		const navLinks = mainNav.querySelectorAll('a');
+		navLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				mainNav.classList.remove('active');
+			});
+		});
+	</script>
+	<main>
+		<div class="news">
+			<h2>- 展会新闻 -</h2>
+			<ul>
+				<li>
+					<img class="big" src="../img/首页/展会新闻图/1.png">
+					<div class="content">
+						<img src="../img/首页/展会新闻图/1.1.png">
+						<h4>日程安排</h4>
+						<p>SCHEDULE</p>
+					</div>
+				</li>
+				<li>
+					<img class="big" src="../img/首页/展会新闻图/2.png">
+					<div class="content">
+						<img src="../img/首页/展会新闻图/2.1.png">
+						<h4>活动介绍</h4>
+						<p>EVENT INTRODUCTION</p>
+					</div>
+				</li>
+				<li>
+					<img  class="big" src="../img/首页/展会新闻图/3.png">
+					<div class="content">
+						<img src="../img/首页/展会新闻图/3.1.png">
+						<h4>论坛介绍</h4>
+						<p>FORUM INTRODUCTION</p>
+					</div>
+				</li>
+				<li>
+					<img class="big" src="../img/首页/展会新闻图/4.png">
+					<div class="content">
+						<img src="../img/首页/展会新闻图/4.1.png">
+						<h4>展商简介</h4>
+						<p>CAPITAL OPERATIONE</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="name">
+				<h5>水生美学 寻微探境</h5>
+				<div class="a">
+					<a href="../index.html">首页</a>
+					<a href="./news.html">展会新闻</a>
+					<a href="./about.html">关于我们</a>	
+					<a href="./contact.html">参展预约</a>
+					<a href="./people.html">合作伙伴</a>
+				</div>
+			</div>
+			<hr>
+			<div class="info">
+				<ul>
+					<li>
+						<h5>联系邮箱</h5>
+						<p>2026 First Micro Fishing Gear Experience Expo@163.com</p>
+					</li>
+					<li>
+						<h5>联系我们</h5>
+						<p>020-000  000-000000</p>
+					</li>
+					<li>
+						<h5>联系地址</h5>
+						<p>浙江省杭州市萧山区美狮线与岩南线交叉路口往西约210米</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

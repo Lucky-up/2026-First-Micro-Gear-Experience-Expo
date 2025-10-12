@@ -1,0 +1,682 @@
+/* 头部导航 */
+.container {
+		height: 100%; 
+    margin: 0 auto;
+		text-align: center;
+}
+.site-header .container nav{
+	z-index: 1;
+	max-width: 1200px;
+	display: flex;
+	margin: 20px auto;
+	width: 60%;
+	float: right;
+
+}
+.site-header .container nav a{
+	z-index: 1;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	width: 20%;
+	text-align: center;
+}
+.site-header .container nav a:hover{
+	color: #2978fa;
+}
+.site-header .container img{
+	margin: -80px 0 0 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* about-us */
+.aboutUs{
+	max-width: 1200px;
+	margin: 30px auto;
+}
+.aboutUs .one{
+	display: flex;
+	justify-content: space-between;
+}
+.aboutUs .one div{
+	width: 45%;
+	margin: 0 auto;
+}
+.aboutUs .one .left h2{
+	text-indent: 2em;
+	font-size: 32px;
+	color: #2978fa;
+	margin-bottom: 80px;
+}
+.aboutUs .one .left h3{
+	font-size: 28px;
+	color: #232323;
+}
+.aboutUs .one .right h4{
+	margin: 20px auto;
+	text-align: center;
+	font-size: 24px;
+	color: #2978fa;
+}
+.aboutUs .one .right p{
+	color: #555555;
+	font-size: 18px;
+	line-height: 2;
+}
+.aboutUs .two{
+	width: 90%;
+	margin: 20px auto;
+}
+.aboutUs .three{
+	margin: 0 auto;
+}
+.aboutUs .three .num ul{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.aboutUs .three .num ul li{
+	text-align: center;
+	list-style: none;
+	width: 30%;
+}
+.aboutUs .three .num ul li .number{
+	font-weight: 500;
+	font-size: 24px;
+	color:#2978fa;
+}
+.aboutUs .three .num ul li .text{
+	font-size: 20px;
+	color: #444444;
+}
+.aboutUs .vedio {
+	max-width: 1200px;
+	text-align: center; /* 使视频水平居中 */
+	margin: 30px auto; /* 上下留出间距，自动水平居中 */
+}
+
+.aboutUs .vedio video {
+	width: 90%;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  min-height: 400px; /* 确保最小高度不低于400px */
+  object-fit: cover;
+}
+
+
+/* news */
+.news{
+	max-width: 1200px;
+	margin: 20px auto;
+	text-align: center;
+}
+.news h2{
+	font-size: 32px;
+	color: #232323;
+}
+.news ul{
+	margin: 50px auto;
+	display: flex;
+	/* flex-wrap: nowrap; */
+	justify-content: space-evenly;
+}
+.news ul li{
+	position: relative;
+	/* width: 22%; */
+	list-style: none;
+	height: 350px;
+}
+.news ul li .big{
+	height: 350px;
+}
+.news ul li:nth-child(2),.news ul li:nth-child(4){
+	margin-top: 100px;
+}
+.news ul li .content{
+	position: absolute;
+	bottom: 60%;
+	left: 50%;
+	transform: translate(-50%,50%);
+}
+
+/* mes */
+.mes{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.mes h2{
+	text-align: center;
+	font-size: 32px;
+	color: #232323;
+	margin: 30px auto;
+}
+.mes .con{
+	display: flex;
+	justify-content: space-evenly;
+}
+.mes .one .top,
+.mes .two .bottom{
+	width: 90%;
+	height: 50%;
+	margin: 20px auto;
+}
+.mes .one .top img,
+.mes .two .bottom img{
+	width: 100%;
+	height: 100%;
+}
+.mes .one .bottom ul li ,
+.mes .two .top ul li {
+	list-style: none;
+}
+.mes .one .bottom ul li a,
+.mes .two .top ul li a{
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	margin: 20px auto;
+  cursor: pointer;
+} 
+.mes .one .bottom ul .no,
+.mes .two .top ul .no{
+	width: 15%;
+	height: auto;
+	text-align: center;
+	background-color: #e0dcdc;
+}
+.mes .one .bottom ul .no h5,
+.mes .two .top ul .no h5{
+	font-size: 20px;
+	color: #232323;
+}
+.mes .one .bottom ul .no p,
+.mes .two .top ul .no p{
+	font-size: 18px;
+	color: #555555;
+}
+.mes .one .bottom ul .txt,
+.mes .two .top ul .txt{
+	margin-left: 5%;
+	width: 70%;
+	height: auto;
+	background-color: #fdfdfd;
+}
+.mes .one .bottom ul .txt h5,
+.mes .two .top ul .txt h5{
+	font-size: 20px;
+	color: #232323;
+}
+.mes .one .bottom ul .txt p,
+.mes .two .top ul .txt p{
+	font-size: 16px;
+	color: #555555;
+}
+
+
+/* look */
+.look{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.look h2{
+	text-align: center;
+	font-size: 32px;
+	color: #232323;
+	margin: 30px auto;
+}
+.look .sub{
+	display: flex;
+	justify-content: space-evenly;
+}
+.look .sub .form,
+.look .sub .map{
+	width: 45%;
+	margin: 0 2.5%;
+}
+.look .sub .map{
+	border: 1px solid #333;
+}
+.look .sub .form input{
+	width: 80%;
+	height: 40px;
+	margin: 15px auto;
+}
+.look .sub .form button{
+	width: 60%;
+	height: 40px;
+	margin: 15px auto;
+	background-color: #2978fa;
+	color: #fff;
+	border: 0;
+}
+.look .contact{
+	margin: 30px auto;
+}
+.look .contact ul{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 40px;
+}
+.look .contact ul li{
+	list-style: none;
+}
+
+/* link */
+.link{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.link h2{
+	text-align: center;
+	font-size: 32px;
+	color: #232323;
+	margin: 30px auto;
+}
+.link ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 30px auto;
+}
+.link ul li{
+	list-style: none;
+	width: 18%;
+	margin: 1% 0;
+}
+.link ul li img{
+	width: 100%;
+}
+.link ul li img:hover{
+	cursor: pointer;
+}
+
+/* footer */
+.footer{
+	width: 100%;
+	background-color: #2978fa;
+	margin: 20px auto;
+}
+.footer .name{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 ;
+	display: flex;
+	justify-content: space-between;
+}
+.footer .name h5{
+	font-size: 24px;
+	color:#fff;
+}
+.footer .name .a{
+	display: flex;
+	justify-content: space-between;
+}
+.footer .name .a a{
+	margin: 10px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+.footer .name .a a:hover{
+	color: orange;
+}
+hr{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.footer .info{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0 ;
+}
+.footer .info ul{
+	display: flex;
+	justify-content: space-between;
+}
+.footer .info ul li{
+	list-style: none;
+	color: #fff;
+}
+.footer .info ul li h5{
+	font-size: 18px;
+}
+.footer.info ul li p{
+	font-size: 16px;
+}
+
+
+/* 修改汉堡菜单按钮样式 */
+.menu-toggle {
+    display: none; /* 默认隐藏汉堡菜单按钮 */
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #2978fa;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* 响应式布局 - 手机设备（768px以下） */
+@media (max-width: 768px) {
+    /* 仅在手机设备上显示汉堡菜单按钮 */
+    .menu-toggle {
+        display: flex !important;
+    }
+    
+    /* 隐藏默认导航菜单 */
+    .site-header .container nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%; /* 初始位置在屏幕外 */
+        width: 100%; /* 使用100%宽度确保完全显示 */
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 70px 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 999;
+        overflow-y: auto; /* 添加滚动条防止内容溢出 */
+    }
+    
+    /* 导航菜单展开状态 */
+    .site-header .container nav.active {
+        right: 0; /* 完全显示在屏幕内 */
+        display: flex;
+    }
+    
+    .site-header .container nav a {
+        width: 100%;
+        text-align: left;
+        padding: 15px 30px; /* 增加左侧padding确保内容不被截断 */
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+    }
+    
+    /* 其他样式保持不变 */
+    .site-header .container nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 70px 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+    
+    /* 导航菜单展开状态 */
+    .site-header .container nav.active {
+        right: 0;
+        display: flex;
+    }
+    
+    .site-header .container nav a {
+        width: 100%;
+        text-align: left;
+        padding: 15px 0;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* 调整白马湖国际会展中心场馆图显示 */
+    .aboutUs .two img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    /* 其他原有样式保持不变 */
+    .site-header .container img {
+        margin: 0;
+    }
+    
+    /* 其他响应式样式保持不变 */
+    .site-header .container nav {
+        width: 100%;
+        flex-direction: column;
+        float: none;
+        margin: 10px auto;
+    }
+    
+    .site-header .container nav a {
+        width: 100%;
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+    
+    .site-header .container img {
+        margin: 0;
+        margin-top: -10px;
+    }
+    
+    /* aboutUs 部分 - 一行三个换为一行一个 */
+    .aboutUs .one {
+        flex-direction: column;
+    }
+    
+    .aboutUs .one div {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .aboutUs .one .left h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    
+    .aboutUs .three .num ul {
+        flex-direction: column;
+    }
+    
+    .aboutUs .three .num ul li {
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    /* news 部分 - 一行四个换为一行两个 */
+    .news ul {
+        flex-wrap: wrap;
+        margin: 30px auto;
+    }
+    
+    .news ul li {
+        width: 45%;
+        margin: 10px 0;
+        height: auto;
+    }
+    
+    .news ul li:nth-child(2),
+    .news ul li:nth-child(4) {
+        margin-top: 10px;
+    }
+    
+    .news ul li .big {
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    /* mes 部分 - 一行两个换为一行一个 */
+    .mes .con {
+        flex-direction: column;
+    }
+    
+    .mes .one,
+    .mes .two {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    /* look 部分 - 一行两个换为一行一个 */
+    .look .sub {
+        flex-direction: column;
+    }
+    
+    .look .sub .form,
+    .look .sub .map {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .look .contact ul {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    
+    .look .contact ul li {
+        margin: 10px 0;
+    }
+    
+    /* link 部分 - 一行五个换为一行两个 */
+    .link ul {
+        flex-wrap: wrap;
+    }
+    
+    .link ul li {
+        width: 45%;
+        margin: 2% 0;
+    }
+    
+    /* footer 部分 - 调整为垂直排列 */
+    .footer .name {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 8px 0; /* 进一步减小padding */
+    }
+    
+    .footer .name h5 {
+        font-size: 18px; /* 减小字体大小 */
+        margin: 3px 0;
+    }
+    
+    .footer .name .a {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3px;
+    }
+    
+    .footer .name .a a {
+        margin: 3px 6px;
+        font-size: 13px;
+    }
+    
+    hr {
+        margin: 8px auto;
+        height: 1px;
+    }
+    
+    .footer .info {
+        padding: 8px 0;
+    }
+
+   /* footer的li标签设置为一行一个 */
+   .footer .info ul {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 所有li标签都调整为垂直排列，确保p标签可以换行 */
+    .footer .info ul li {
+        width: 100%;
+        margin: 4px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    /* h5标签样式调整 */
+    .footer .info ul li h5 {
+        font-size: 14px;
+        margin: 0 0 3px 0;
+        white-space: nowrap;
+    }
+
+    /* 所有p标签允许换行，特别是联系信息部分 */
+    .footer .info ul li p {
+        font-size: 12px;
+        margin: 0;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+    }
+}
+
+/* 响应式布局 - 平板设备（769px-1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* 调整导航栏 */
+    .site-header .container nav {
+        width: 80%;
+    }
+    
+    /* 调整新闻部分 */
+    .news ul li {
+        width: 45%;
+        margin: 20px 0;
+    }
+    
+    .news ul {
+        flex-wrap: wrap;
+    }
+    
+    /* 调整友情链接 */
+    .link ul li {
+        width: 30%;
+        margin: 1.5% 0;
+    }
+}
+
+/* 确保在平板和电脑设备上（769px以上）隐藏汉堡菜单按钮 */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+    
+    /* 确保导航菜单正常显示 */
+    .site-header .container nav {
+        display: flex !important;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 60%;
+        height: auto;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+        float: right;
+        overflow-y: visible;
+    }
+    
+    .site-header .container nav a {
+        width: 20%;
+        text-align: center;
+        padding: 0;
+        border-bottom: none;
+    }
+}

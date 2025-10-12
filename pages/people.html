@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>合作伙伴</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/people.css">
+</head>
+<body>
+	<header class="site-header">
+		<!-- 汉堡菜单按钮 -->
+		<div class="menu-toggle" id="menuToggle">☰</div>
+		<div class="container header-inner">
+			<nav class="main-nav" id="mainNav">
+				<a href="../index.html">首页</a>
+				<a href="./news.html">展会新闻</a>
+				<a href="./about.html">关于我们</a>
+				<a href="./contact.html">参展预约</a>
+				<a href="./people.html">合作伙伴</a>
+			</nav>
+			<img src="../img/首页/2顶栏水生美学官网封面.png" >
+		</div>
+	</header>
+	<!-- 添加JavaScript以实现汉堡菜单功能 -->
+	<script>
+		// 获取菜单按钮和导航菜单
+		const menuToggle = document.getElementById('menuToggle');
+		const mainNav = document.getElementById('mainNav');
+		
+		// 点击菜单按钮切换导航菜单显示状态
+		menuToggle.addEventListener('click', function() {
+			mainNav.classList.toggle('active');
+		});
+		
+		// 点击导航链接后关闭菜单
+		const navLinks = mainNav.querySelectorAll('a');
+		navLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				mainNav.classList.remove('active');
+			});
+		});
+	</script>
+	<main>
+		<div class="lunbo">
+			<h2>- 合作伙伴</h2>
+			<!-- 左箭头 -->
+			<button class="carousel-arrow arrow-left">←</button>
+			<ul>
+				<li>
+					<div class="mess">
+						<div class="pic">
+							<img src="../img/合作伙伴/合作伙伴1.jpg">
+						</div>
+						<div class="passage">
+							<h1>跨界融合 伙伴赋能</h1>
+							<p>
+								水生美学-2026微物钓具体验展”深度聚焦轻量化垂钓这一高速增长的新兴赛道，创新打造“垂直细分+跨界融合”的展会新模式。与传统综合钓具展形成差异化定位，我们精准对接轻量化钓鱼市场的专业需求，致力于推动微物钓产业与户外生活方式的创新融合。
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="mess">
+						<div class="pic">
+							<img src="../img/合作伙伴/合作伙伴2.png">
+						</div>
+						<div class="passage">
+							<h1>商贸对接 资源互惠</h1>
+							<p>
+								水生美学-2026微物钓具体验展”深度聚焦轻量化垂钓这一高速增长的新兴赛道，创新打造“垂直细分+跨界融合”的展会新模式。与传统综合钓具展形成差异化定位，我们精准对接轻量化钓鱼市场的专业需求，致力于推动微物钓产业与户外生活方式的创新融合。
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="mess">
+						<div class="pic">
+							<img src="../img/合作伙伴/合作伙伴3.png">
+						</div>
+						<div class="passage">
+							<h1>“轻钓+”新经济模式</h1>
+							<p>
+								本届展会的核心特色是成功整合了旅游出行、露营生活、科技应用和环保产业四大跨界领域：通过实景体验区、专业论坛和跨界洽谈会等多元形式，打造集产品展示、技术交流、商贸对接与场景体验于一体的综合性平台。
+							</p>
+							<p>
+								本质上，这是一个以小物钓为入口的"户外生活方式"综合平台，致力于推动钓鱼从单一运动向"钓具+场景+内容"的复合型消费体验升级，为参展企业提供精准的资源对接机会，为专业买家呈现创新的产品体验，共同探索小物钓产业在新时代的发展机遇与商业价值。
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="mess">
+						<div class="pic">
+							<img src="../img/合作伙伴/合作伙伴4.png">
+						</div>
+						<div class="passage">
+							<h1>产业链协同与品牌创新共振</h1>
+							<p>
+								业态融合新引擎--微物钓是连接文旅、汽车、露营、时尚、科技等多个行业的超级场景入口。我们为旅游车企提供“车载垂钓”内容，为露营地打造“钓营一体”增值服务，为科技公司提供虚拟与现实结合的体验场景等。
+							</p>
+							<p>
+								商业新蓝海：本届展会率先构建了一个跨界资源对接平台，让钓具品牌与异业品牌共同探索“轻钓+露营”、“轻钓+文旅”、“轻钓+科技”等的全新商业模式，开辟增量市场。
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 右箭头 -->
+			<button class="carousel-arrow arrow-right">→</button>
+			
+			<!-- 轮播指示器 -->
+			<div class="carousel-indicators"></div>
+		</div>
+		<div class="footer">
+			<div class="name">
+				<h5>水生美学 寻微探境</h5>
+				<div class="a">
+					<a href="../index.html">首页</a>
+					<a href="./news.html">展会新闻</a>
+					<a href="./about.html">关于我们</a>	
+					<a href="./contact.html">参展预约</a>
+					<a href="./people.html">合作伙伴</a>
+				</div>
+			</div>
+			<hr>
+			<div class="info">
+				<ul>
+					<li>
+						<h5>联系邮箱</h5>
+						<p>026 First Micro Fishing Gear Experience Expo@163.com</p>
+					</li>
+					<li>
+						<h5>联系我们</h5>
+						<p>020-000  000-000000</p>
+					</li>
+					<li>
+						<h5>联系地址</h5>
+						<p>浙江省杭州市萧山区美狮线与岩南线交叉路口往西约210米</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const carousel = document.querySelector('.lunbo ul');
+			const slides = document.querySelectorAll('.lunbo ul li');
+			const prevBtn = document.querySelector('.arrow-left');
+			const nextBtn = document.querySelector('.arrow-right');
+			const indicatorsContainer = document.querySelector('.carousel-indicators');
+			let currentIndex = 0;
+			const slideCount = slides.length;
+			
+			// 指示器文字内容（与轮播内容对应）
+			const indicatorTexts = [
+				'跨界联动',
+				'体验升级',
+				'业态融合',
+				'协同共进'
+			];
+
+			// 创建新样式的指示器
+			for (let i = 0; i < slideCount; i++) {
+				const indicator = document.createElement('div');
+				indicator.classList.add('indicator');
+				
+				// 圆点元素
+				const dot = document.createElement('div');
+				dot.classList.add('indicator-dot');
+				
+				// 文字元素
+				const text = document.createElement('div');
+				text.classList.add('indicator-text');
+				text.textContent = indicatorTexts[i] || `项目 ${i+1}`;
+				
+				indicator.appendChild(dot);
+				indicator.appendChild(text);
+				
+				if (i === currentIndex) {
+					indicator.classList.add('active');
+				}
+				
+				indicator.addEventListener('click', () => goToSlide(i));
+				indicatorsContainer.appendChild(indicator);
+			}
+			const indicators = document.querySelectorAll('.indicator');
+
+			// 更新轮播显示
+			function updateCarousel() {
+				const slideWidth = 100; // 百分比
+				carousel.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+				
+				// 更新指示器状态
+				indicators.forEach((indicator, index) => {
+					if (index === currentIndex) {
+						indicator.classList.add('active');
+					} else {
+						indicator.classList.remove('active');
+					}
+				});
+			}
+
+			// 跳转到指定幻灯片
+			function goToSlide(index) {
+				currentIndex = index;
+				// 处理循环
+				if (currentIndex < 0) {
+					currentIndex = slideCount - 1;
+				} else if (currentIndex >= slideCount) {
+					currentIndex = 0;
+				}
+				updateCarousel();
+			}
+
+			// 上一张
+			prevBtn.addEventListener('click', () => {
+				goToSlide(currentIndex - 1);
+			});
+
+			// 下一张
+			nextBtn.addEventListener('click', () => {
+				goToSlide(currentIndex + 1);
+			});
+
+			// 自动轮播
+			let autoplayInterval = setInterval(() => {
+				goToSlide(currentIndex + 1);
+			}, 5000); // 5秒切换一次
+
+			// 鼠标悬停时暂停自动轮播
+			const lunboContainer = document.querySelector('.lunbo');
+			lunboContainer.addEventListener('mouseenter', () => {
+				clearInterval(autoplayInterval);
+			});
+
+			// 鼠标离开时恢复自动轮播
+			lunboContainer.addEventListener('mouseleave', () => {
+				autoplayInterval = setInterval(() => {
+					goToSlide(currentIndex + 1);
+				}, 5000);
+			});
+
+			// 初始化显示
+			updateCarousel();
+		});
+	</script>
+</body>
+</html>

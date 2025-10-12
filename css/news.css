@@ -1,0 +1,11 @@
+/* 响应式布局 - 手机设备（768px以下） */
+@media (max-width: 768px) {
+    .site-header .container img {
+        margin-top: 0;
+    }
+}
+.site-header .container img{
+	width: 100%;
+	z-index: 0;
+	margin-top: 2px;
+}
