@@ -65,10 +65,35 @@
 	font-size: 18px;
 	line-height: 2;
 }
-.aboutUs .two{
+/* .aboutUs .two{
 	width: 90%;
 	margin: 20px auto;
+} */
+/* 修复视频容器高度塌陷问题 */
+.aboutUs .two {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  /* 关键：触发BFC，强制容器包裹内部元素 */
+  overflow: hidden; 
+  /* 可选：设置最小高度，避免视频加载前容器完全消失 */
+  min-height: 200px; 
 }
+  
+  /* 确保视频正确占据空间 */
+.aboutUs .two video {
+  width: 100%;
+  max-width: 1200px;
+  /* 关键：明确视频为块级元素，确保高度被容器识别 */
+  display: block; 
+  height: auto; /* 保持宽高比 */
+  margin: 0 auto; /* 水平居中 */
+  object-fit: contain; /* 完整显示视频内容，不裁剪 */
+}
+  
+
 .aboutUs .three{
 	margin: 0 auto;
 }
@@ -438,12 +463,12 @@ hr{
         border-bottom: 1px solid #eee;
     }
     
-    /* 调整白马湖国际会展中心场馆图显示 */
+    /* 调整白马湖国际会展中心场馆图显示
     .aboutUs .two img {
         width: 100%;
         height: auto;
         object-fit: contain;
-    }
+    } */
     
     /* 其他原有样式保持不变 */
     .site-header .container img {
@@ -483,7 +508,9 @@ hr{
         margin-bottom: 30px;
         font-size: 28px;
     }
-    
+    .aboutUs .two video {
+        min-height: 200px; /* 在小屏幕上设置最小最小高度，确保可见性 */
+    }
     .aboutUs .three .num ul {
         flex-direction: column;
     }
